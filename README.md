@@ -1,12 +1,12 @@
 # Almostfu
 
-TODO: Write a gem description
+  Simply package almost flat ui into rails
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'almostfu'
+    gem 'almostfu', :git => 'git@github.com:xiongbo/almostfu.git'
 
 And then execute:
 
@@ -16,9 +16,28 @@ Or install it yourself as:
 
     $ gem install almostfu
 
+## Dependency
+
+This gem need compass, so you should also include compass in your Gemfile by use 'compass-rails' gem
+
+    #rails 4
+    gem 'compass-rails', '~>2.0.alpha.0'
+
+    #rails 3.X, in asset group
+    gem 'compass-rails' 
+
+and also need foundation gem
+
+    gem 'zurb-foundation', '~>4.0.0'
+
 ## Usage
 
-TODO: Write usage instructions here
+In your application.css.scss, import compass and foundation
+
+    @import compass
+    @import foundation
+    @import almostfu
+
 
 ## Contributing
 
